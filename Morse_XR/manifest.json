@@ -1,0 +1,14 @@
+{
+  "name": "Ingress Decode/morsecode(XR)",
+  "description": "Decode Tools",
+  "version": "0.2",
+  "permissions": ["contextMenus", "clipboardRead"],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content_script.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
